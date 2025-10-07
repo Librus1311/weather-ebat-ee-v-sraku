@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 40px 0;
+    background: #02012b;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main-section{
+    display: flex;
+    gap: 30px;
+}
+
+section{
+    flex-grow: 1;
+}
+
+/* WEATHER TODAY */
+
+.weather-today{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.weather-today-cards{
+    display: flex;
+    width: calc(100% / 4 - 60px);
+    gap: 20px;
+}
+
+/* WEATHER FORECAST */
+
+.daily-forecast-cards{
+    display: flex;
+    gap: 10px;
+    width: calc(100% / 7 -60px);
+}
+
+.daiy-forecast-cards-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.daily-forecast-cards-item-temp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ASIDE */
+
+aside{
+    padding: 10px;
+    width: 25%;
+}
+
+.aside-cards-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.dark-bg{
+    background: #25253f;
+}
+
+.light-bg{
+    background: #2f2f49;
+}
+
+.brad{
+    border-radius: 10px;
+}
