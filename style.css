@@ -6,11 +6,9 @@
 
 body{
     color: #fff;
-    margin: 40px 0;
+    margin: 30px 60px;
     background: #02012b;
-    padding: 20px;
 }
-
 
 .container{
     max-width: 1200px;
@@ -23,28 +21,31 @@ body{
     align-items: center;
 }
 
-h1{
+.main-title{
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    font-size: 60px;
 }
 
 form{
     display: flex;
     justify-content: center;
     gap: 10px;
-
 }
 
 .search-input{
     min-height: 40px;
-    width: 25%;
+    width: 45%;
+    padding-left: 20px;
 }
 
 .search-btn{
     background: #4657d8;
     color: #fff;
     padding: 15px;
+    width: 100px;
+    border: none;
 }
 
 .main-section{
@@ -71,8 +72,23 @@ section{
     padding: 0 30px;
 }
 
+.weather-today-location{
+    margin-bottom: 10px;
+}
+
+.weather-today-number{
+    font-size: 70px;
+    margin-left: 20px;
+}
+
 .weather-today-temp{
     display: flex;
+    
+}
+
+.weather-today-temp img{
+    width: 85px;
+    height: 85px;
 }
 
 .weather-today-cards{
@@ -84,7 +100,19 @@ section{
 .weather-today-stuff-item{
     width: calc(100% / 4 - 20px);
     height: 100px;
-    /* width: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.weather-today-stuff-item h3{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.weather-today-stuff-item p{
+    font-size: 35px;
 }
 
 /* WEATHER FORECAST */
@@ -101,19 +129,20 @@ section{
 }
 
 .daiy-forecast-cards-item{
-    width: calc(100% / 7 -60px);
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 150px;
+    gap: 10px;
+    height: 140px;
 }
 
 .daily-forecast-cards-item-temp{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 /* ASIDE */
@@ -132,18 +161,42 @@ aside{
 .aside-cards{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
 }
 
 .aside-cards-item{
     padding: 10px;
     width: 100%;
+    height: 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.aside-cards-left{
+    display: flex;
+    align-items: center;
+}
 
+.aside-cards-left p{
+    margin-top: 5px;
+}
+
+/* IMAGES */
+
+.weather-img{
+    width: 50px;
+    height: 50px;
+}
+
+.weather-img-aside{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+/* COLORS */
 
 
 .dark-bg{
@@ -156,4 +209,8 @@ aside{
 
 .brad{
     border-radius: 10px;
+}
+
+.outline{
+    outline: #27274b 1px solid;
 }
