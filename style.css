@@ -1,11 +1,14 @@
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body{
+    color: #fff;
     margin: 40px 0;
     background: #02012b;
+    padding: 20px;
 }
 
 
@@ -21,14 +24,34 @@ body{
 }
 
 h1{
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.search-input{
+    min-height: 40px;
+    width: 25%;
+}
+
+.search-btn{
+    background: #4657d8;
+    color: #fff;
+    padding: 15px;
 }
 
 .main-section{
     display: flex;
+    align-items: stretch;
     gap: 30px;
+    margin-top: 40px;
 }
 
 section{
@@ -42,27 +65,49 @@ section{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+    min-height: 230px;
+    background: url(img/bg-today-large.svg) no-repeat;
+    background-size: cover;
+    padding: 0 30px;
+}
+
+.weather-today-temp{
+    display: flex;
 }
 
 .weather-today-cards{
     display: flex;
-    width: calc(100% / 4 - 60px);
+    justify-content: space-between;
     gap: 20px;
+}
+
+.weather-today-stuff-item{
+    width: calc(100% / 4 - 20px);
+    height: 100px;
+    /* width: 100px; */
 }
 
 /* WEATHER FORECAST */
 
 .daily-forecast-cards{
+    justify-content: space-between;
     display: flex;
     gap: 10px;
-    width: calc(100% / 7 -60px);
+}
+
+.daily-forecast h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .daiy-forecast-cards-item{
+    width: calc(100% / 7 -60px);
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 150px;
 }
 
 .daily-forecast-cards-item-temp{
@@ -74,11 +119,24 @@ section{
 /* ASIDE */
 
 aside{
-    padding: 10px;
+    padding: 15px;
     width: 25%;
 }
 
+.aside-navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.aside-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .aside-cards-item{
+    padding: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
