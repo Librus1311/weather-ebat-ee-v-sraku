@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -14,9 +19,30 @@
             <div class="header-navbar">
                 <div class="header-logo"><img src="img/logo.svg" alt="logo">
                 </div>
-                <div class="header-nav">Units</div>
+                <div class="header-nav-block">
+                    <div class="header-nav brad dark-bg outline">
+                        <img src="img/icon-units.svg" alt="units pic" class="units-pic">
+                        <p>Units</p> 
+                        <img src="img/icon-dropdown.svg" alt="dropdown" class="dropdown-pic">
+                    </div>
+                    <div class="header-nav-drop-menu brad dark-bg outline">
+                        <ul>
+                            <li class="header-drop-menu-swith">Switch to Imperial</li>
+                            <li class="header-drop-menu-title">Temperature</li>
+                            <li>Celsius (°C)</li>
+                            <li>Fahrenheit (°F)</li>
+                            <li class="header-drop-menu-title">Wind Speed</li>
+                            <li>km/h</li>
+                            <li>mph</li>
+                            <li class="header-drop-menu-title">Precipitation</li>
+                            <li>Millimetres (mm)</li>
+                            <li>Inches (in)</li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
-            <h1 class="main-title">How's the sky looking today</h1>
+            <h1 class="main-title">How's the sky looking today?</h1>
             <div class="search-bar">
                 <form>
                     <input type="text" class="search-input brad dark-bg" placeholder="Search for a place">
@@ -45,16 +71,16 @@
                                 <p>18°</p>
                             </div>
                             <div class="weather-today-stuff-item brad dark-bg outline">
-                                <h3>Feels Like</h3>
-                                <p>18°</p>
+                                <h3>humidity</h3>
+                                <p>46%</p>
                             </div>
                             <div class="weather-today-stuff-item brad dark-bg outline">
-                                <h3>Feels Like</h3>
-                                <p>18°</p>
+                                <h3>Wind</h3>
+                                <p>14 km/h</p>
                             </div>
                             <div class="weather-today-stuff-item brad dark-bg outline">
-                                <h3>Feels Like</h3>
-                                <p>18°</p>
+                                <h3>Precipitation</h3>
+                                <p>0 mm</p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +88,7 @@
                         <h2>Daily forecast</h2>
                         <div class="daily-forecast-cards">
                             <div class="daiy-forecast-cards-item brad dark-bg outline">
-                                <h3>tue</h3>
+                                <h3>Tue</h3>
                                 <img src="img/icon-drizzle.webp" alt="weather pic" class="weather-img">
                                 <div class="daily-forecast-cards-item-temp">
                                     <p>20°</p>
@@ -70,7 +96,7 @@
                                 </div>
                             </div>
                             <div class="daiy-forecast-cards-item brad dark-bg outline">
-                                <h3>tue</h3>
+                                <h3>Wed</h3>
                                 <img src="img/icon-fog.webp" alt="weather pic" class="weather-img">
                                 <div class="daily-forecast-cards-item-temp">
                                     <p>20°</p>
@@ -78,7 +104,7 @@
                                 </div>
                             </div>
                             <div class="daiy-forecast-cards-item brad dark-bg outline">
-                                <h3>tue</h3>
+                                <h3>Thu</h3>
                                 <img src="img/icon-overcast.webp" alt="weather pic" class="weather-img">
                                 <div class="daily-forecast-cards-item-temp">
                                     <p>20°</p>
@@ -86,7 +112,7 @@
                                 </div>
                             </div>
                             <div class="daiy-forecast-cards-item brad dark-bg outline">
-                                <h3>tue</h3>
+                                <h3>Fri</h3>
                                 <img src="img/icon-partly-cloudy.webp" alt="weather pic" class="weather-img">
                                 <div class="daily-forecast-cards-item-temp">
                                     <p>20°</p>
@@ -94,7 +120,7 @@
                                 </div>
                             </div>
                             <div class="daiy-forecast-cards-item brad dark-bg outline">
-                                <h3>tue</h3>
+                                <h3>Sat</h3>
                                 <img src="img/icon-rain.webp" alt="weather pic" class="weather-img">
                                 <div class="daily-forecast-cards-item-temp">
                                     <p>20°</p>
@@ -102,7 +128,7 @@
                                 </div>
                             </div>
                             <div class="daiy-forecast-cards-item brad dark-bg outline">
-                                <h3>tue</h3>
+                                <h3>Sun</h3>
                                 <img src="img/icon-snow.webp" alt="weather pic" class="weather-img">
                                 <div class="daily-forecast-cards-item-temp">
                                     <p>20°</p>
@@ -110,7 +136,7 @@
                                 </div>
                             </div>
                             <div class="daiy-forecast-cards-item brad dark-bg outline">
-                                <h3>tue</h3>
+                                <h3>Mon</h3>
                                 <img src="img/icon-storm.webp" alt="weather pic" class="weather-img">
                                 <div class="daily-forecast-cards-item-temp">
                                     <p>20°</p>
@@ -123,7 +149,27 @@
                 <aside class="brad dark-bg">
                     <div class="aside-navbar">
                         <h3>Hourly forecast</h3>
-                        <p>Tuesday</p>
+                        <div class="week ">
+                            <div class="week-day-block brad light-bg outline">
+                                <p>Tuesday</p> 
+                                <img src="img/icon-dropdown.svg" alt="dropdown" class="dropdown-pic">
+                                
+                            </div>
+                            <div class="week-list brad dark-bg outline">
+                                <ul>
+                                    <li>Monday</li>
+                                    <li>Tuesday</li>
+                                    <li>Wednesday</li>
+                                    <li>Thursday</li>
+                                    <li>Friday</li>
+                                    <li>Saturday</li>
+                                    <li>Sunday</li>
+                                </ul>
+                            </div>
+                            
+                                
+                            
+                        </div>
                     </div>
                     <div class="aside-cards">
                         <div class="aside-cards-item brad light-bg outline">
